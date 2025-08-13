@@ -257,7 +257,7 @@ export default function ContactPage() {
                   />
                 </div>
 
-                {/* <div>
+                <div>
                   <label htmlFor="services" className="block text-sm font-medium text-gray-700 mb-1">
                     Services
                   </label>
@@ -268,12 +268,16 @@ export default function ContactPage() {
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   >
-                    <option value="">Select a service</option>
-                    <option value="web-design">Web Design</option>
-                    <option value="seo">SEO</option>
-                    <option value="social-media">Social Media Marketing</option>
+                 <option>Select</option>
+                 <option value="/borewell-camera-scanning">Borewell Camera Scanning</option>
+                 <option value="/borewell-cleaning">Borewell Cleaning</option>
+                 <option value="/ground-water-survey">Ground Water Survey</option>
+                 <option value="/borewell-drilling">Borewell Drilling</option>
+                 <option value="/installation-pumps">Installation Of Pumps</option>
+                 <option value="/borewell-repair">Borewell Repair</option>
+
                   </select>
-                </div> */}
+                </div>
 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">

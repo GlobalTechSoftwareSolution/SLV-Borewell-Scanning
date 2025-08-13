@@ -77,7 +77,7 @@ export default function BorewellDrillingCard() {
             </motion.h3>
             
             <motion.p variants={item} className="text-md leading-relaxed mb-6">
-              With over 15 years of hydrogeological expertise, we provide end-to-end borewell solutions 
+              With over 2 years of hydrogeological expertise, we provide end-to-end borewell solutions 
               from survey to maintenance, ensuring optimal water yield with minimal environmental impact.
             </motion.p>
             

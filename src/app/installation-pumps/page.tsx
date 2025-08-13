@@ -245,7 +245,6 @@ export default function PumpInstallationSection() {
             </svg>
            <Link href='/contact'>Get Your Free Pump Consultation</Link>
           </button>
-          <p className="text-sm mt-3 text-[#B8F1EC]">All installations include 2-year service warranty</p>
         </motion.div>
       </motion.div>
     </motion.div>

@@ -13,11 +13,11 @@ const Navbar = () => {
 
   // ✅ Service Links
   const services = [
-    { name: 'Borewell Drilling', link: '/borewell-drilling' },
-    { name: 'Ground Water Survey', link: '/ground-water-survey' },
     { name: 'Borewell Camera Scanning', link: '/borewell-camera-scanning' },
-    { name: 'Installation Of Pumps', link: '/installation-pumps' },
     { name: 'Borewell Cleaning', link: '/borewell-cleaning' },
+    { name: 'Ground Water Survey', link: '/ground-water-survey' },
+    { name: 'Borewell Drilling', link: '/borewell-drilling' },
+    { name: 'Installation Of Pumps', link: '/installation-pumps' },
     { name: 'Borewell Repair', link: '/borewell-repair' },
   ];
 
@@ -35,7 +35,7 @@ const Navbar = () => {
                 height={64}
                 className="h-16 w-16 rounded-full shadow"
               />
-              <span className="text-xl font-bold text-[#73FFFF] leading-tight">
+              <span className="text-xl font-bold text-gray-700 leading-tight">
                 SLV <br /> Borewell Scanning
               </span>
             </Link>

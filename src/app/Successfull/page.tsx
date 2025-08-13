@@ -79,9 +79,8 @@ function SuccessfulBusinessSection() {
             </h2>
 
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
-              Kannan Borewells was founded by Mr. N.K.Kumar in the year 1971 pillarred
-              by his son Mr. N.K. Hari Kumar in Bangalore, Karnataka, India. Today
-              KANNAN BOREWELLS has emerged as Bangalore's No. 1 company in water well
+              SLV was founded by 8-2-293/82/B/21/1 Jawahar colony road no 5 Jubilee hills Hyderabad 500033 in Bangalore, Karnataka, India. Today
+             SLV has emerged as Bangalore's No. 1 company in water well
               drilling rigs not only in the state of Karnataka, till date the company
               must have drilled more than 25,000 points successfully in many parts of
               India and overseas. We are fast, efficient and we have a high regard

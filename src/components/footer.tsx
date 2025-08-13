@@ -6,16 +6,16 @@ import Image from "next/image";
 
 const Footer = () => {
   const services = [
+    { name: "Borewell Camera Scanning", link: "/borewell-camera-scanning" },
+    { name: "Borewell Cleaning", link: "/borewell-cleaning" },
     { name: "Borewell Drilling", link: "/borewell-drilling" },
     { name: "Ground Water Survey", link: "/ground-water-survey" },
-    { name: "Borewell Camera Scanning", link: "/borewell-camera-scanning" },
     { name: "Installation Of Pumps", link: "/installation-pumps" },
-    { name: "Borewell Cleaning", link: "/borewell-cleaning" },
     { name: "Borewell Repair", link: "/borewell-repair" }
   ];
 
   return (
-    <footer className="bg-[#73FFFF] text-black py-10 px-6 md:px-20">
+    <footer className="bg-[#F1F0E8] text-black py-10 px-6 md:px-20">
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 border-b border-green-500 pb-10">
         
         {/* Logo & Tagline */}
@@ -23,7 +23,7 @@ const Footer = () => {
           <div className="flex items-center space-x-3 mb-4">
             <Image
               src="/logo/slvlogo.jpeg"
-              alt="logo"
+              alt="SLV Borewell Scanner Logo"
               width={64}
               height={64}
               className="h-16 w-16 rounded-full shadow"
@@ -65,9 +65,18 @@ const Footer = () => {
         {/* Contact Info */}
         <div>
           <h4 className="text-lg font-semibold mb-4">Contact</h4>
-          <p className="mb-2">
-            📍 8-2-293/82/B/21/1 Jawahar colony road no 5 Jubilee hills Hyderabad 500033
-          </p>
+          <div className="flex items-start mb-2">
+            <Image
+              src="/logo/map.png"
+              alt="Map Icon"
+              width={20}
+              height={20}
+              className="mt-1 mr-2"
+            />
+            <span>
+              8-2-293/82/B/21/1 Jawahar Colony Road No 5, Jubilee Hills, Hyderabad - 500033
+            </span>
+          </div>
           <p className="mb-2">
             📞 <a href="tel:+918861184809" className="hover:text-yellow-300">+91 88611 84809</a>
           </p>
@@ -77,13 +86,13 @@ const Footer = () => {
 
           {/* Social Media Icons */}
           <div className="flex gap-4 mt-4">
-            <Link href="https://www.instagram.com/globaltechsoftwaresolutions00" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.instagram.com/slvborewellscanning?igsh=MXI5bTI5OGlrcXQ1cA==" target="_blank" rel="noopener noreferrer">
               <Image src="/logo/instagram.png" alt="Instagram" width={24} height={24} />
             </Link>
-            <Link href="https://www.facebook.com/profile.php?id=61576624472044" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
               <Image src="/logo/facebook.png" alt="Facebook" width={24} height={24} />
             </Link>
-            <Link href="https://www.youtube.com/@Globaltech-softwaresolutions" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
               <Image src="/logo/youtube.png" alt="YouTube" width={24} height={24} />
             </Link>
           </div>
@@ -92,7 +101,7 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="max-w-screen-xl mx-auto mt-6 flex flex-col md:flex-row justify-between items-center text-sm text-black">
-       <h3>© {new Date().getFullYear()} SLV Borewell Scanner. All rights reserved.</h3>
+        <h3>© {new Date().getFullYear()} SLV Borewell Scanner. All rights reserved.</h3>
         <h1>Designed & Developed by Global Tech Software Solutions</h1>
       </div>
 

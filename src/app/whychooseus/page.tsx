@@ -36,7 +36,7 @@ export default function WhyChooseUs() {
         className="text-center mb-12"
       >
         <h2 className="text-3xl md:text-4xl font-bold text-green-900 mb-4">
-          Why Choose <span className="text-green-700">Borewell Assist</span> Drilling Service
+          Why Choose <span className="text-green-700">SLV Borewell Assist</span> Drilling Service
         </h2>
         <div className="w-24 h-1 bg-green-600 mx-auto rounded-full"></div>
       </motion.div>
@@ -174,7 +174,7 @@ export default function WhyChooseUs() {
       >
         <div className="inline-block bg-green-700 text-white px-8 py-4 rounded-lg shadow-md hover:shadow-lg transition-shadow">
           <p className="text-lg font-semibold">
-            Choose Borewell Assist and experience the difference. We are the trusted partner for all your borewell needs.
+             Choose Borewell Assist and experience the difference. We are the trusted partner for all your borewell needs.
           </p>
           <button className="mt-4 bg-white text-green-700 px-6 py-2 rounded-full font-bold hover:bg-green-50 transition-colors">
             <Link href='/contact'>Contact Us Today</Link>
