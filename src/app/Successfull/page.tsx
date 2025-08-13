@@ -3,9 +3,6 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Navbar from '@/components/navbar';
-import Footer from '@/components/footer';
-import Faqs from '@/app/faqs/page';
 
 function SuccessfulBusinessSection() {
   const videoRef = useRef<HTMLVideoElement | null>(null); // ✅ Typed video ref
@@ -94,9 +91,9 @@ function SuccessfulBusinessSection() {
             <div className="pt-2">
               <a
                 href="/about"
-                className="inline-flex items-center rounded-1xl bg-orange-500 px-6 py-3 text-white font-semibold shadow-md transition hover:bg-orange-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500/60"
+                className="inline-flex items-center rounded-xl bg-orange-500 px-6 py-3 text-white font-semibold shadow-md transition hover:bg-orange-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500/60"
               >
-                READ MORE
+                <Link href='/contact'>READ MORE</Link>
               </a>
             </div>
           </motion.div>

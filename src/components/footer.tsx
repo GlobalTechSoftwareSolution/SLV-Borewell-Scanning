@@ -15,7 +15,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-green-700 text-white py-10 px-6 md:px-20">
+    <footer className="bg-[#73FFFF] text-black py-10 px-6 md:px-20">
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 border-b border-green-500 pb-10">
         
         {/* Logo & Tagline */}
@@ -91,9 +91,9 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="max-w-screen-xl mx-auto mt-6 flex flex-col md:flex-row justify-between items-center text-sm text-green-200">
-        <p>© {new Date().getFullYear()} SLV Borewell Scanner. All rights reserved.</p>
-        <p>Designed & Developed by Global Tech Software Solutions</p>
+      <div className="max-w-screen-xl mx-auto mt-6 flex flex-col md:flex-row justify-between items-center text-sm text-black">
+       <h3>© {new Date().getFullYear()} SLV Borewell Scanner. All rights reserved.</h3>
+        <h1>Designed & Developed by Global Tech Software Solutions</h1>
       </div>
 
       {/* WhatsApp Floating Button */}

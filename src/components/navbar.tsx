@@ -35,7 +35,7 @@ const Navbar = () => {
                 height={64}
                 className="h-16 w-16 rounded-full shadow"
               />
-              <span className="text-xl font-bold text-green-700 leading-tight">
+              <span className="text-xl font-bold text-[#73FFFF] leading-tight">
                 SLV <br /> Borewell Scanning
               </span>
             </Link>
@@ -179,12 +179,12 @@ const Navbar = () => {
               {mobileContactOpen && (
                 <div className="mt-2 w-50 bg-white shadow-lg rounded-md z-10 justify-between">
                   <a href="tel:+919844281875">
-                    <button className="bg-orange-400 hover:bg-orange-600 text-white px-4 py-2 rounded font-semibold transform hover:scale-105 transition duration-200 w-full">
+                    <button className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded font-semibold transform hover:scale-105 transition duration-200 w-full">
                       Call Us 📞
                     </button>
                   </a>
                   <Link href="/contact">
-                    <button className="bg-orange-400 mt-3 hover:bg-orange-600 text-white px-4 py-2 rounded font-semibold transform hover:scale-105 transition duration-200 w-full">
+                    <button className="bg-green-700 mt-3 hover:bg-green-800 text-white px-4 py-2 rounded font-semibold transform hover:scale-105 transition duration-200 w-full">
                       Request For a Quote 📋
                     </button>
                   </Link>
