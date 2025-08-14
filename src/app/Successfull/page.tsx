@@ -81,8 +81,7 @@ function SuccessfulBusinessSection() {
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
               SLV was founded by 8-2-293/82/B/21/1 Jawahar colony road no 5 Jubilee hills Hyderabad 500033 in Bangalore, Karnataka, India. Today
              SLV has emerged as Bangalore's No. 1 company in water well
-              drilling rigs not only in the state of Karnataka, till date the company
-              must have drilled more than 25,000 points successfully in many parts of
+              drilling rigs not only in the state of Karnataka.
               India and overseas. We are fast, efficient and we have a high regard
               for safety.
             </p>

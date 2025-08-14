@@ -21,11 +21,6 @@ const faqs = [
       "We recommend cleaning every 2–3 years or sooner if you notice reduced water flow, muddy water, or unusual odors.",
   },
   {
-    question: "Can you repair an existing borewell instead of drilling a new one?",
-    answer:
-      "Yes! We offer borewell repair and recharging services that can restore your existing borewell’s efficiency without the cost of a new one.",
-  },
-  {
     question: "What is borewell recharging?",
     answer:
       "It’s a method of increasing the water availability in your borewell by channeling rainwater or surface water into it, helping restore its yield.",
@@ -53,7 +48,7 @@ const faqs = [
   {
     question: "How can I book your services?",
     answer:
-      "You can call us at +91-9844281875, email us at tech@globaltechsoftwaresolutions.com, or use the Contact page on our website.",
+      "You can call us at +91-8861184809, email us at girishvr88@gmail.com, or use the Contact page on our website.",
   },
 ];
 

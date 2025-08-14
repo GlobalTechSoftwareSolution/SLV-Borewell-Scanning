@@ -89,6 +89,9 @@ const Footer = () => {
             <Link href="https://www.instagram.com/slvborewellscanning?igsh=MXI5bTI5OGlrcXQ1cA==" target="_blank" rel="noopener noreferrer">
               <Image src="/logo/instagram-logo.png" alt="Instagram" width={24} height={24} />
             </Link>
+            <Link href="https://wa.me/918861184809" target="_blank" rel="noopener noreferrer">
+              <Image src="/logo/whatsapp.png" alt="whatsapp" width={24} height={24} />
+            </Link>
           </div>
         </div>
       </div>
