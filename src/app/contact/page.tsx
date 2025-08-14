@@ -4,7 +4,7 @@ import React, { useState, useRef, FormEvent } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
-// import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -38,37 +38,37 @@ export default function ContactPage() {
 
     if (!form.current) return;
 
-    // emailjs
-    //   .sendForm(
-    //     process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '',
-    //     process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '',
-    //     form.current,
-    //     process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || ''
-    //   )
-    //   .then(
-    //     () => {
-    //       setPopup({
-    //         show: true,
-    //         message: 'Message sent successfully!',
-    //         type: 'success'
-    //       });
-    //       setFormData({
-    //         name: '',
-    //         phone: '',
-    //         email: '',
-    //         services: '',
-    //         message: ''
-    //       });
-    //     },
-    //     (error) => {
-    //       setPopup({
-    //         show: true,
-    //         message: 'Failed to send message. Please try again.',
-    //         type: 'error'
-    //       });
-    //       console.error('FAILED...', error.text);
-    //     }
-    //   );
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '',
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '',
+        form.current,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || ''
+      )
+      .then(
+        () => {
+          setPopup({
+            show: true,
+            message: 'Message sent successfully!',
+            type: 'success'
+          });
+          setFormData({
+            name: '',
+            phone: '',
+            email: '',
+            services: '',
+            message: ''
+          });
+        },
+        (error) => {
+          setPopup({
+            show: true,
+            message: 'Failed to send message. Please try again.',
+            type: 'error'
+          });
+          console.error('FAILED...', error.text);
+        }
+      );
   };
 
   return (
@@ -268,7 +268,7 @@ export default function ContactPage() {
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   >
-                 <option>Select</option>
+                 <option>Select </option>
                  <option value="/borewell-camera-scanning">Borewell Camera Scanning</option>
                  <option value="/borewell-cleaning">Borewell Cleaning</option>
                  <option value="/ground-water-survey">Ground Water Survey</option>

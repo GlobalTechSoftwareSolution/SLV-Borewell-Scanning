@@ -1,8 +1,15 @@
 'use client';
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
-import { CurrencyDollarIcon, WrenchScrewdriverIcon, CheckBadgeIcon, ClockIcon, ShieldCheckIcon } from "@heroicons/react/24/solid";
+import { 
+  CurrencyDollarIcon, 
+  WrenchScrewdriverIcon, 
+  CheckBadgeIcon, 
+  ClockIcon, 
+  ShieldCheckIcon 
+} from "@heroicons/react/24/solid";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
@@ -11,9 +18,7 @@ export default function BorewellCleaningCard() {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.2
-      }
+      transition: { staggerChildren: 0.2 }
     }
   };
 
@@ -22,9 +27,7 @@ export default function BorewellCleaningCard() {
     visible: {
       y: 0,
       opacity: 1,
-      transition: {
-        duration: 0.5
-      }
+      transition: { duration: 0.5 }
     }
   };
 
@@ -39,9 +42,15 @@ export default function BorewellCleaningCard() {
           viewport={{ once: true }}
           className="max-w-2xl mx-auto bg-gradient-to-br from-[#0D7C6D] to-[#0A5E55] rounded-2xl shadow-xl overflow-hidden"
         >
-          {/* Water wave decoration */}
-          <div className="absolute bottom-0 left-0 right-0 overflow-hidden h-20">
-            <div className="absolute -bottom-4 left-0 right-0 h-16 bg-[#0BBFA5] opacity-20 rounded-t-full animate-wave"></div>
+          {/* Borewell cleaning image */}
+          <div className="relative w-full h-56 md:h-72">
+            <Image
+              src="/logo/s2.jpg" // <-- Make sure you place your image in public/images/
+              alt="Borewell Cleaning Service"
+              fill
+              className="object-cover"
+              priority
+            />
           </div>
 
           {/* Header with icon */}
@@ -54,7 +63,9 @@ export default function BorewellCleaningCard() {
             >
               <WrenchScrewdriverIcon className="h-8 w-8 text-white" />
             </motion.div>
-            <h3 className="text-2xl font-bold text-center text-[#F9F871]">Professional Borewell Cleaning</h3>
+            <h3 className="text-2xl font-bold text-center text-[#F9F871]">
+              Professional Borewell Cleaning
+            </h3>
             <p className="mt-2 text-center text-green-100">
               Restore your borewell's efficiency with our comprehensive cleaning services
             </p>
@@ -70,7 +81,9 @@ export default function BorewellCleaningCard() {
           >
             {/* Problem section */}
             <motion.div variants={item} className="mb-6">
-              <h4 className="font-semibold text-lg text-[#F9F871] mb-3">Common Borewell Problems We Solve:</h4>
+              <h4 className="font-semibold text-lg text-[#F9F871] mb-3">
+                Common Borewell Problems We Solve:
+              </h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {[
                   "Sediment accumulation",
@@ -93,26 +106,11 @@ export default function BorewellCleaningCard() {
               <h4 className="font-semibold text-lg text-[#F9F871] mb-3">Our Cleaning Process:</h4>
               <div className="space-y-4">
                 {[
-                  {
-                    step: "Inspection",
-                    desc: "Camera survey to identify blockages and damage"
-                  },
-                  {
-                    step: "High-pressure jetting",
-                    desc: "Removes stubborn deposits and sediment"
-                  },
-                  {
-                    step: "Chemical treatment",
-                    desc: "Eliminates bacterial growth and mineral deposits"
-                  },
-                  {
-                    step: "Mechanical cleaning",
-                    desc: "For severe blockages and encrustations"
-                  },
-                  {
-                    step: "Final testing",
-                    desc: "Flow rate measurement and water quality check"
-                  }
+                  { step: "Inspection", desc: "Camera survey to identify blockages and damage" },
+                  { step: "High-pressure jetting", desc: "Removes stubborn deposits and sediment" },
+                  { step: "Chemical treatment", desc: "Eliminates bacterial growth and mineral deposits" },
+                  { step: "Mechanical cleaning", desc: "For severe blockages and encrustations" },
+                  { step: "Final testing", desc: "Flow rate measurement and water quality check" }
                 ].map((step, index) => (
                   <div key={index} className="flex items-start bg-[#0A6E63]/90 p-3 rounded-lg border-l-4 border-[#F9F871]">
                     <div className="bg-[#F9F871] text-[#0A5E55] font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5">
@@ -132,31 +130,13 @@ export default function BorewellCleaningCard() {
               <h4 className="font-semibold text-lg text-[#F9F871] mb-3">Benefits:</h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {[
-                  {
-                    icon: <ShieldCheckIcon className="h-5 w-5 text-[#F9F871]" />,
-                    title: "Improved Water Quality",
-                    desc: "Reduces contaminants and bacteria"
-                  },
-                  {
-                    icon: <ClockIcon className="h-5 w-5 text-[#F9F871]" />,
-                    title: "Faster Service",
-                    desc: "Most jobs completed in 4-6 hours"
-                  },
-                  {
-                    icon: <CurrencyDollarIcon className="h-5 w-5 text-[#F9F871]" />,
-                    title: "Cost Effective",
-                    desc: "Cheaper than drilling new borewell"
-                  },
-                  {
-                    icon: <WrenchScrewdriverIcon className="h-5 w-5 text-[#F9F871]" />,
-                    title: "Equipment Protection",
-                    desc: "Extends pump and pipe lifespan"
-                  }
+                  { icon: <ShieldCheckIcon className="h-5 w-5 text-[#F9F871]" />, title: "Improved Water Quality", desc: "Reduces contaminants and bacteria" },
+                  { icon: <ClockIcon className="h-5 w-5 text-[#F9F871]" />, title: "Faster Service", desc: "Most jobs completed in 4-6 hours" },
+                  { icon: <CurrencyDollarIcon className="h-5 w-5 text-[#F9F871]" />, title: "Cost Effective", desc: "Cheaper than drilling new borewell" },
+                  { icon: <WrenchScrewdriverIcon className="h-5 w-5 text-[#F9F871]" />, title: "Equipment Protection", desc: "Extends pump and pipe lifespan" }
                 ].map((benefit, index) => (
                   <div key={index} className="bg-[#0A6E63] p-3 rounded-lg flex items-start">
-                    <div className="mr-3">
-                      {benefit.icon}
-                    </div>
+                    <div className="mr-3">{benefit.icon}</div>
                     <div>
                       <h5 className="font-medium">{benefit.title}</h5>
                       <p className="text-sm text-green-100">{benefit.desc}</p>
@@ -173,10 +153,12 @@ export default function BorewellCleaningCard() {
               whileTap={{ scale: 0.98 }}
               className="mt-6 text-center"
             >
-              <button className="bg-gradient-to-r from-[#F472B6] to-[#F9A8D4] text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all inline-flex items-center">
-                <WrenchScrewdriverIcon className="h-5 w-5 mr-2" />
-                <Link href='/contact'>Schedule Cleaning Service</Link>
-              </button>
+              <Link href='/contact'>
+                <button className="bg-gradient-to-r from-[#F472B6] to-[#F9A8D4] text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all inline-flex items-center">
+                  <WrenchScrewdriverIcon className="h-5 w-5 mr-2" />
+                  Schedule Cleaning Service
+                </button>
+              </Link>
             </motion.div>
           </motion.div>
         </motion.div>

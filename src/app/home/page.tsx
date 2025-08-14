@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const HeroSection = () => {
   const images = [
-    { src: "/logo/s2.jpg", className: "hero-img-home object-cover object-[50%_30%]" },
-    { src: "/logo/s5.webp", className: "hero-img-scan1 object-cover object-[50%_30%]" },
+    { src: "/logo/s2.jpg", className: "hero-img-s2 object-cover object-[50%_30%]" },
+    { src: "/logo/s5.webp", className: "hero-img-s5 object-cover object-[50%_30%]" },
     { src: "/logo/scan2.jpg", className: "hero-img-scan2 object-cover object-[50%_30%]" },
     { src: "/logo/scan4.webp", className: "hero-img-scan4 object-cover object-[50%_30%]" },
   ];
@@ -41,7 +41,7 @@ const HeroSection = () => {
 
         <Link
           href="/about"
-          className="bg-pink-600 hover:bg-pink-700 text-white font-semibold py-3 px-6 rounded shadow-lg transition-all duration-300 inline-block"
+          className="bg-pink-500 hover:bg-pink-700 text-white font-semibold py-3 px-6 rounded-xl shadow-lg transition-all duration-300 inline-block"
         >
           Explore More
         </Link>

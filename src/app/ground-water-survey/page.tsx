@@ -12,6 +12,7 @@ import {
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function GroundWaterSurveyCard() {
   const container: Variants = {
@@ -31,7 +32,7 @@ export default function GroundWaterSurveyCard() {
       opacity: 1,
       transition: {
         duration: 0.5,
-        ease: [0, 0, 0.58, 1] as const // ✅ tuple type for cubic-bezier
+        ease: [0, 0, 0.58, 1] as const
       }
     }
   };
@@ -47,9 +48,15 @@ export default function GroundWaterSurveyCard() {
           viewport={{ once: true }}
           className="bg-gradient-to-br from-teal-700 to-teal-800 rounded-2xl shadow-xl overflow-hidden max-w-2xl mx-auto"
         >
-          {/* Decorative wave */}
-          <div className="absolute bottom-0 left-0 right-0 overflow-hidden h-20">
-            <div className="absolute -bottom-4 left-0 right-0 h-16 bg-teal-600/30 rounded-t-full animate-wave"></div>
+          {/* Image Section */}
+          <div className="relative w-full h-56 md:h-72">
+            <Image
+              src="/logo/scan2.jpg"
+              alt="Groundwater Survey in Progress"
+              fill
+              className="object-cover"
+              priority
+            />
           </div>
 
           {/* Header with animated icon */}
@@ -62,7 +69,9 @@ export default function GroundWaterSurveyCard() {
             >
               <MapIcon className="w-8 h-8 text-white" />
             </motion.div>
-            <h3 className="text-2xl font-bold text-amber-300 mb-2">Professional Ground Water Survey</h3>
+            <h3 className="text-2xl font-bold text-amber-300 mb-2">
+              Professional Ground Water Survey
+            </h3>
             <p className="text-teal-100">
               Accurate hydrogeological assessment for optimal borewell placement
             </p>
@@ -91,7 +100,10 @@ export default function GroundWaterSurveyCard() {
                   "Remote Sensing Analysis",
                   "Borehole Logging"
                 ].map((method, index) => (
-                  <div key={index} className="flex items-center bg-teal-600/50 px-4 py-2 rounded-lg">
+                  <div
+                    key={index}
+                    className="flex items-center bg-teal-600/50 px-4 py-2 rounded-lg"
+                  >
                     <CheckIcon className="h-5 w-5 text-amber-300 mr-2" />
                     <span className="text-sm">{method}</span>
                   </div>
@@ -123,7 +135,10 @@ export default function GroundWaterSurveyCard() {
                     desc: "Survey completed within 24-48 hours"
                   }
                 ].map((benefit, index) => (
-                  <div key={index} className="bg-teal-600/30 p-3 rounded-lg border-l-4 border-amber-400 flex items-start">
+                  <div
+                    key={index}
+                    className="bg-teal-600/30 p-3 rounded-lg border-l-4 border-amber-400 flex items-start"
+                  >
                     <div className="mr-3 mt-0.5">{benefit.icon}</div>
                     <div>
                       <h5 className="font-medium">{benefit.title}</h5>
@@ -171,11 +186,13 @@ export default function GroundWaterSurveyCard() {
               whileTap={{ scale: 0.98 }}
               className="mt-6 text-center"
             >
-              <button className="bg-gradient-to-r from-amber-400 to-amber-500 text-teal-900 px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all inline-flex items-center">
+              <Link
+                href="/contact"
+                className="bg-gradient-to-r from-amber-400 to-amber-500 text-teal-900 px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all inline-flex items-center"
+              >
                 <DocumentTextIcon className="w-5 h-5 mr-2" />
-                <Link href="/contact">Book Your Survey Today</Link>
-              </button>
-              <p className="text-xs mt-2 text-teal-200">Serving Bangalore and surrounding areas</p>
+                Book Your Survey Today
+              </Link>
             </motion.div>
           </motion.div>
         </motion.div>
@@ -188,7 +205,12 @@ export default function GroundWaterSurveyCard() {
 function CheckIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg {...props} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M5 13l4 4L19 7"
+      />
     </svg>
   );
 }

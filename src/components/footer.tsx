@@ -87,7 +87,7 @@ const Footer = () => {
           {/* Social Media Icons */}
           <div className="flex gap-4 mt-4">
             <Link href="https://www.instagram.com/slvborewellscanning?igsh=MXI5bTI5OGlrcXQ1cA==" target="_blank" rel="noopener noreferrer">
-              <Image src="/logo/instagram.png" alt="Instagram" width={24} height={24} />
+              <Image src="/logo/instagram-logo.png" alt="Instagram" width={24} height={24} />
             </Link>
             <Link href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
               <Image src="/logo/facebook.png" alt="Facebook" width={24} height={24} />

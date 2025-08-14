@@ -115,7 +115,7 @@ export default function BorewellRepairCard() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5 }}
               >
-                Comprehensive solutions for uninterrupted water supply with 15+ years of expertise in borewell systems.
+                Comprehensive solutions for uninterrupted water supply with 2+ years of expertise in borewell systems.
               </motion.p>
 
               <motion.div 
