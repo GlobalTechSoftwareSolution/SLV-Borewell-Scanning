@@ -89,12 +89,6 @@ const Footer = () => {
             <Link href="https://www.instagram.com/slvborewellscanning?igsh=MXI5bTI5OGlrcXQ1cA==" target="_blank" rel="noopener noreferrer">
               <Image src="/logo/instagram-logo.png" alt="Instagram" width={24} height={24} />
             </Link>
-            <Link href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-              <Image src="/logo/facebook.png" alt="Facebook" width={24} height={24} />
-            </Link>
-            <Link href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
-              <Image src="/logo/youtube.png" alt="YouTube" width={24} height={24} />
-            </Link>
           </div>
         </div>
       </div>

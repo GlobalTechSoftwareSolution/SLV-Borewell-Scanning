@@ -51,10 +51,10 @@ export default function GroundWaterSurveyCard() {
           {/* Image Section */}
           <div className="relative w-full h-56 md:h-72">
             <Image
-              src="/logo/scan2.jpg"
+              src="/logo/servey.avif"
               alt="Groundwater Survey in Progress"
               fill
-              className="object-cover"
+              className="object-cover object-[70%_65%]"
               priority
             />
           </div>
