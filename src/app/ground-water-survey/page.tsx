@@ -91,7 +91,7 @@ export default function GroundWaterSurveyCard() {
                 <MagnifyingGlassIcon className="w-5 h-5 mr-2" />
                 Our Survey Methods
               </h4>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-white">
                 {[
                   "Electrical Resistivity Testing",
                   "Electromagnetic Survey",
@@ -141,7 +141,7 @@ export default function GroundWaterSurveyCard() {
                   >
                     <div className="mr-3 mt-0.5">{benefit.icon}</div>
                     <div>
-                      <h5 className="font-medium">{benefit.title}</h5>
+                      <h5 className="font-medium text-white">{benefit.title}</h5>
                       <p className="text-sm text-teal-100">{benefit.desc}</p>
                     </div>
                   </div>
@@ -157,7 +157,7 @@ export default function GroundWaterSurveyCard() {
               </h4>
               <div className="relative">
                 <div className="absolute left-5 h-full w-0.5 bg-teal-600"></div>
-                <div className="space-y-4 pl-10">
+                <div className="space-y-4 pl-10 text-white">
                   {[
                     "Initial Site Assessment",
                     "Equipment Setup & Calibration",
@@ -188,7 +188,7 @@ export default function GroundWaterSurveyCard() {
             >
               <Link
                 href="/contact"
-                className="bg-gradient-to-r from-amber-400 to-amber-500 text-teal-900 px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all inline-flex items-center"
+                className="bg-gradient-to-r from-amber-400 to-amber-500 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all inline-flex items-center"
               >
                 <DocumentTextIcon className="w-5 h-5 mr-2" />
                 Book Your Survey Today

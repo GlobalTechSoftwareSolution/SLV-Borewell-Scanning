@@ -43,7 +43,7 @@ function SuccessfulBusinessSection() {
             <button
               onClick={handleToggle}
               aria-label={isPlaying ? "Pause video" : "Play video"}
-              className="absolute inset-0 m-auto flex h-20 w-20 items-center justify-center rounded-full bg-white/90 shadow-lg ring-1 ring-black/10 transition hover:scale-105"
+              className="absolute m-auto inset-0 flex h-20 w-20 items-center justify-center rounded-full bg-white/90 shadow-lg ring-1 ring-black/10 transition hover:scale-105"
               style={{
                 top: "50%",
                 left: "50%",
@@ -92,7 +92,7 @@ function SuccessfulBusinessSection() {
                 href="/about"
                 className="inline-flex items-center rounded-xl bg-orange-500 px-6 py-3 text-white font-semibold shadow-md transition hover:bg-orange-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500/60"
               >
-                <Link href='/contact'>READ MORE</Link>
+                <Link href='/about'>READ MORE</Link>
               </a>
             </div>
           </motion.div>

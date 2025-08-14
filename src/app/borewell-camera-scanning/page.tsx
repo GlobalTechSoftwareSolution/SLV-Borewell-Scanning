@@ -30,17 +30,6 @@ export default function BorewellScanningCard() {
           animate={{ scale: [1, 1.2, 1] }}
           transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }}
         />
-        
-        {/* Icon Circle */}
-        <motion.div
-          className="absolute -top-6 left-1/2 -translate-x-1/2 bg-white p-3 rounded-full shadow-lg z-10"
-          initial={{ scale: 0 }}
-          whileInView={{ scale: 1 }}
-          transition={{ duration: 0.4, delay: 0.2, type: "spring" }}
-          viewport={{ once: true }}
-        >
-          <CameraIcon className="h-8 w-8 text-teal-800" />
-        </motion.div>
 
         <div className="flex flex-col md:flex-row gap-6 items-center">
           {/* Text Content */}

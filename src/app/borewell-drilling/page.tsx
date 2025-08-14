@@ -46,24 +46,6 @@ export default function BorewellDrillingCard() {
             <div className="absolute -bottom-6 left-0 right-0 h-12 bg-[#0BBFA5] opacity-20 rounded-t-full animate-wave"></div>
           </div>
 
-          {/* Icon with enhanced animation */}
-          <motion.div 
-            initial={{ scale: 0, rotate: -180 }}
-            animate={{ scale: 1, rotate: 0 }}
-            transition={{ type: "spring", stiffness: 300, damping: 20 }}
-            className="absolute -top-10 left-1/2 transform -translate-x-1/2"
-          >
-            <div className="bg-gradient-to-r from-[#F472B6] to-[#F9A8D4] rounded-full p-4 shadow-xl">
-              <Image
-                src="/icons/drilling-icon.png"
-                alt="Borewell Drilling Icon"
-                width={50}
-                height={50}
-                className="filter drop-shadow-md"
-              />
-            </div>
-          </motion.div>
-
           {/* Content with staggered animations */}
           <motion.div 
             className="mt-12"

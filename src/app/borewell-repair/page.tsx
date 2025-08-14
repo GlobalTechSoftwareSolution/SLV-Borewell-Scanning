@@ -175,7 +175,7 @@ export default function BorewellRepairCard() {
               >
                 <div className="flex justify-center items-center space-x-3 mb-3">
                   <PhoneIcon className="h-6 w-6 text-emerald-700" />
-                  <span className="font-bold text-emerald-800 text-xl">Emergency Call: +91 88611 84809</span>
+                  <span className="font-bold text-emerald-800 text-xl">Call US : +91 88611 84809</span>
                 </div>
                 <p className="text-emerald-700">Free inspection and estimate for first-time customers</p>
               </motion.div>

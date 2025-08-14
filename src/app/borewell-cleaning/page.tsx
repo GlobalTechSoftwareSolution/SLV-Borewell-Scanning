@@ -84,7 +84,7 @@ export default function BorewellCleaningCard() {
               <h4 className="font-semibold text-lg text-[#F9F871] mb-3">
                 Common Borewell Problems We Solve:
               </h4>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-white">
                 {[
                   "Sediment accumulation",
                   "Reduced water flow",
@@ -113,11 +113,11 @@ export default function BorewellCleaningCard() {
                   { step: "Final testing", desc: "Flow rate measurement and water quality check" }
                 ].map((step, index) => (
                   <div key={index} className="flex items-start bg-[#0A6E63]/90 p-3 rounded-lg border-l-4 border-[#F9F871]">
-                    <div className="bg-[#F9F871] text-[#0A5E55] font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5">
+                    <div className="bg-[#F9F871] text-white font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5">
                       {index + 1}
                     </div>
                     <div>
-                      <h5 className="font-medium">{step.step}</h5>
+                      <h5 className="font-medium text-white">{step.step}</h5>
                       <p className="text-sm text-green-100">{step.desc}</p>
                     </div>
                   </div>
@@ -138,8 +138,8 @@ export default function BorewellCleaningCard() {
                   <div key={index} className="bg-[#0A6E63] p-3 rounded-lg flex items-start">
                     <div className="mr-3">{benefit.icon}</div>
                     <div>
-                      <h5 className="font-medium">{benefit.title}</h5>
-                      <p className="text-sm text-green-100">{benefit.desc}</p>
+                      <h5 className="font-medium text-white">{benefit.title}</h5>
+                      <p className="text-sm text-white">{benefit.desc}</p>
                     </div>
                   </div>
                 ))}
